@@ -4,6 +4,7 @@ import Technologies from "./Technologies";
 import YourStack from "./YourStack";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import Footer from "./Footer";
 
 
 
@@ -43,7 +44,7 @@ function App(){
 
         </div>
       </div>
-      
+      <Footer />
     </Suspense>
     
   </div>
