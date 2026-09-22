@@ -2,7 +2,8 @@ import type { devstackType } from "./Type";
 import { Suspense, useState } from "react";
 import Technologies from "./Technologies";
 import YourStack from "./YourStack";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
+import Hero from "./Hero";
 
 
 
@@ -18,7 +19,8 @@ function App(){
  return (
   <div className="min-h-screen bg-gray-50">
     <Suspense fallback={<p>Loading....</p>}>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Hero />
       <div className="container mx-auto px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
 
