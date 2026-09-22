@@ -14,13 +14,16 @@ const Technologies = ({devStackPromise,stack,setStack}:technologiesProps) => {
   <div className="h-full">
 
     <div className="mb-5">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-        <span className="text-pink-600">Technologies</span>
-      </h2>
+     <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+  Explore the{" "}
+  <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+    Technologies
+  </span>
+</h2>
 
-      <p className="text-sm text-gray-500 mt-1">
-        Explore technologies and build your perfect development stack.
-      </p>
+<p className="text-sm text-gray-500 mt-2">
+  Pick one technology per category to build your ideal stack.
+</p>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
