@@ -1,5 +1,5 @@
 // import React from 'react';
-import logofooter from './assets/logo-text.png'
+// import logofooter from './assets/logo-text.png'
 const Footer = () => {
   
 return (
@@ -13,8 +13,7 @@ return (
         {/* Logo + Description */}
         <div>
           <img
-            src={logofooter}
-            alt="DevStack"
+            src="/logo-text.png" alt="DevStack logo"
             className="w-36 mb-5"
           />
 

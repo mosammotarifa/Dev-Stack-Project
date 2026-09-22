@@ -1,5 +1,6 @@
 // import Technology from "./Technology";
 import type { devstackType } from "./Type";
+import { toast } from "react-toastify";
 
 // import React from 'react';
 export interface yourStackProps{
@@ -9,12 +10,20 @@ export interface yourStackProps{
 }
 
 const YourStack = ({stack,setStack}:yourStackProps) => {
-    const handletechRemove=(id:number)=>{
-        const remainingtech=stack.filter((techo)=>techo.id !== id)
-        setStack(remainingtech)
-    }
+    
+const handletechRemove = (id: number) => {
+    const removedTech = stack.find((techo) => techo.id === id);
+
+    const remainingtech = stack.filter((techo) => techo.id !== id);
+
+    setStack(remainingtech);
+
+    toast.info(`${removedTech?.name} removed from your stack.`);
+};
+
     const handleRemoveAll=()=>{
         setStack([])
+          toast.success("All technologies removed from your stack.")
     }
    return (
   <div className="h-full">

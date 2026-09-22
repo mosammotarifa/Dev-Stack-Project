@@ -5,6 +5,8 @@ import YourStack from "./YourStack";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Footer from "./Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -46,8 +48,13 @@ function App(){
       </div>
       <Footer />
     </Suspense>
-    
+    <ToastContainer
+      
+    />
+
   </div>
+
 );
 }
+
 export default App;

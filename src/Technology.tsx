@@ -1,5 +1,6 @@
 
 import type { devstackType } from './Type';
+import { toast } from "react-toastify";
 export interface technologyProps{
     technology:devstackType
     stack:devstackType[]
@@ -11,6 +12,7 @@ const Technology = ({technology,stack,setStack}:technologyProps) => {
     const isadd=stack.some((tech)=>tech.id===technology.id)
     const handleStackButton=()=>{
         setStack([...stack,technology])
+        toast.success(`${technology.name} added to your stack!`);
         // setStackButton(true)
     }
    return (

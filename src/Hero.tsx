@@ -1,5 +1,5 @@
 // import React from 'react';
-import  HeroImage from './assets/banner-stack.png'
+// import  HeroImage from './assets/banner-stack.png'
 
 const Hero = () => {
     return (
@@ -19,7 +19,7 @@ Explore Technologies</button>
                       </div>
           </div>
           <div className='w-full flex justify-center lg:1/2'>
-            <img src={HeroImage} alt="Development Stack" className='w-full object-contain max-w-lg' />
+            <img src="/banner-stack.png" alt="Development stack" className='w-full object-contain max-w-lg' />
           </div>
         </div>
         </div>
